@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="autotile.js"></script>
+</head>
+
+<body>
+
+<script>
+var img = new Image();
+
+img.onload = function(){
+	var palette = Autotile.getPalette(this, 4);
+	
+	document.body.appendChild(palette);
+};
+img.src = 'eauxp.png';
+
+</script>
+
+</body>
+</html>
